@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Тест на HTML</title>
+  </head>
+  <body>
+    <h1>Тест на HTML</h1>
+    <form>
+      <p>1. HTML означает "Hyper Text Markup Language".</p>
+      <label>
+        <input type="radio" name="q1" value="yes"> Да
+      </label>
+      <label>
+        <input type="radio" name="q1" value="no"> Нет
+      </label>
+      <p>2. HTML используется для создания статических веб-страниц.</p>
+      <label>
+        <input type="radio" name="q2" value="yes"> Да
+      </label>
+      <label>
+        <input type="radio" name="q2" value="no"> Нет
+      </label>
+      <p>3. HTML не может использоваться для создания интерактивных веб-страниц.</p>
+      <label>
+        <input type="radio" name="q3" value="no"> Нет
+      </label>
+      <label>
+        <input type="radio" name="q3" value="yes"> Да
+      </label>
+      <p>4. HTML теги всегда заключаются в угловые скобки.</p>
+      <label>
+        <input type="radio" name="q4" value="yes"> Да
+      </label>
+      <label>
+        <input type="radio" name="q4" value="no"> Нет
+      </label>
+      <p>5. HTML может использоваться для создания таблиц.</p>
+      <label>
+        <input type="radio" name="q5" value="yes"> Да
+      </label>
+      <label>
+        <input type="radio" name="q5" value="no"> Нет
+      </label>
+      <p>6. HTML теги могут иметь атрибуты.</p>
+      <label>
+        <input type="radio" name="q6" value="yes"> Да
+      </label>
+      <label>
+        <input type="radio" name="q6" value="no"> Нет
+      </label>
+      <p>7. HTML использует CSS для оформления веб-страниц.</p>
+      <label>
+        <input type="radio" name="q7" value="yes"> Да
+      </label>
+      <label>
+        <input type="radio" name="q7" value="no"> Нет
+      </label>
+      <p>8. HTML может использоваться для создания форм для ввода данных.</p>
+      <label>
+        <input type="radio" name="q8" value="yes"> Да
+      </label>
+      <label>
+        <input type="radio" name="q8" value="no"> Нет
+      </label>
+      <p>9. HTML не может использоваться для вставки изображений на веб-страницу.</p>
+      <label>
+        <input type="radio" name="q9" value="no"> Нет
+      </label>
+      <label>
+        <input type="radio" name="q9" value="yes"> Да
+      </label>
+      <p>10. HTML может использоваться для создания ссылок на другие веб-страницы.</p>
+<label>
+<input type="radio" name="q10" value="yes"> Да
+</label>
+<label>
+<input type="radio" name="q10" value="no"> Нет
+</label>
+<br>
+<button type="button" onclick="calculateResults()">Подсчитать результаты</button>
+</form>
+<p>Количество ответов "Да": <span id="result"></span></p>
+<script>
+function calculateResults() {
+let yesCount = 0;
+const questions = document.getElementsByTagName('input');
+for (let i = 0; i < questions.length; i++) {
+if (questions[i].checked && questions[i].value === 'yes') {
+yesCount++;
+}
+}
+document.getElementById('result').textContent = yesCount;
+}
+</script>
+
+  </body>
+</html>
