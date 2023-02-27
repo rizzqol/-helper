@@ -32,10 +32,10 @@
       </label>
       <p>3. Что такое ГМ? (Гуд мод, режим бога)</p>
       <label>
-        <input type="radio" name="q3" value="no"> Не верно
+        <input type="radio" name="q3" value="yes"> Верно
       </label>
       <label>
-        <input type="radio" name="q3" value="yes"> Верно
+        <input type="radio" name="q3" value="no"> Не верно
       </label>
       <p>4. Что такое ЦК? (РП килл)</p>
       <label>
@@ -76,10 +76,10 @@
       </label>
       <p>2. Минимальное количество грабителей? (4)</p>
       <label>
-        <input type="radio" name="q9" value="no"> Не верно
+        <input type="radio" name="q9" value="yes"> Верно
       </label>
       <label>
-        <input type="radio" name="q9" value="yes"> Верно
+        <input type="radio" name="q9" value="no"> Не верно
       </label>
       <p>3. Когда можно чинить свой транспорт? (Если скрылась инкассация)</p>
 	<label>
@@ -127,8 +127,9 @@
       </label>
 	<br>
 	<button type="button" onclick="calculateResults()" style="border-radius: 20px; background-color: black; color: white; padding: 10px 20px;">Подсчитать результаты</button>
+	 <button type="reset"style="border-radius: 20px; background-color: black; color: white; padding: 10px 20px;">Сбросить ответы</button>
 	</form>
-	<p>Количество ответов "Верно": <span id="result"></span></p>
+<p>Количество ответов "Верно": <span id="result" style="font-weight: bold; color: black;"></span></p>
 	<script>
 	function calculateResults() {
 	let yesCount = 0;
@@ -144,40 +145,35 @@
 
 	  </body>
 <p style="font-weight:bold; color:white;">1. Ник    2. Кол-во правильных ответов</p>
-	  <table>
-  <tr>
-	<td><input type="text"></td>   <td><input type="text"></td>
-  </tr>
-  <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
-  <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
+<button id="add-row-btn"style="border-radius: 20px; background-color: black; color: white; padding: 10px 20px;">Добавить ячейку</button>
+
+<table>
+  <tbody id="table-body">
     <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
-    <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
-    <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
-    <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
-    <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
-    <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
-    <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
-    <tr>
-    <td><input type="text"></td><td><input type="text"></td>
-  </tr>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+    </tr>
+  </tbody>
 </table>
+
+<script>
+  const addRowButton = document.querySelector('#add-row-btn');
+  const tableBody = document.querySelector('#table-body');
+
+  addRowButton.addEventListener('click', () => {
+    const newRow = document.createElement('tr');
+    const cell1 = document.createElement('td');
+    const cell2 = document.createElement('td');
+    const input1 = document.createElement('input');
+    const input2 = document.createElement('input');
+    input1.setAttribute('type', 'text');
+    input2.setAttribute('type', 'text');
+    cell1.appendChild(input1);
+    cell2.appendChild(input2);
+    newRow.appendChild(cell1);
+    newRow.appendChild(cell2);
+    tableBody.appendChild(newRow);
+  });
+</script>
 </center>
 	</html>
