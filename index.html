@@ -2,97 +2,182 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Тест на HTML</title>
+    <title>ghetto 1</title>
+    <style>
+      body {
+ background-image: radial-gradient(circle at 50% -20.71%, #ffdee5 0, #ffd7e3 10%, #ffcfe1 20%, #ffc6e0 30%, #fbbedf 40%, #f2b5de 50%, #e8adde 60%, #dda6df 70%, #d0a0e0 80%, #c39ce2 90%, #b498e5 100%);
+       color: purple;  
+	font-family: Courier New, sans-serif;	   
+	 }
+    </style>
   </head>
   <body>
-    <h1>Тест на HTML</h1>
+    <center>
+	<h1>Обзвон гетто №1</h1>
     <form>
-      <p>1. HTML означает "Hyper Text Markup Language".</p>
+	    <h2>РП термины</h2>
+      <p>1. Что такое RP? (Игра по ролям).</p>
       <label>
-        <input type="radio" name="q1" value="yes"> Да
+        <input type="radio" name="q1" value="yes"> Верно
       </label>
       <label>
-        <input type="radio" name="q1" value="no"> Нет
+        <input type="radio" name="q1" value="no"> Не верно
       </label>
-      <p>2. HTML используется для создания статических веб-страниц.</p>
+      <p>2. Что такое ВХ? (Прыжки на велике)</p>
       <label>
-        <input type="radio" name="q2" value="yes"> Да
-      </label>
-      <label>
-        <input type="radio" name="q2" value="no"> Нет
-      </label>
-      <p>3. HTML не может использоваться для создания интерактивных веб-страниц.</p>
-      <label>
-        <input type="radio" name="q3" value="no"> Нет
+        <input type="radio" name="q2" value="yes"> Верно
       </label>
       <label>
-        <input type="radio" name="q3" value="yes"> Да
+        <input type="radio" name="q2" value="no"> Не верно
       </label>
-      <p>4. HTML теги всегда заключаются в угловые скобки.</p>
+      <p>3. Что такое ГМ? (Гуд мод, режим бога)</p>
       <label>
-        <input type="radio" name="q4" value="yes"> Да
-      </label>
-      <label>
-        <input type="radio" name="q4" value="no"> Нет
-      </label>
-      <p>5. HTML может использоваться для создания таблиц.</p>
-      <label>
-        <input type="radio" name="q5" value="yes"> Да
+        <input type="radio" name="q3" value="no"> Не верно
       </label>
       <label>
-        <input type="radio" name="q5" value="no"> Нет
+        <input type="radio" name="q3" value="yes"> Верно
       </label>
-      <p>6. HTML теги могут иметь атрибуты.</p>
+      <p>4. Что такое ЦК? (РП килл)</p>
       <label>
-        <input type="radio" name="q6" value="yes"> Да
-      </label>
-      <label>
-        <input type="radio" name="q6" value="no"> Нет
-      </label>
-      <p>7. HTML использует CSS для оформления веб-страниц.</p>
-      <label>
-        <input type="radio" name="q7" value="yes"> Да
+        <input type="radio" name="q4" value="yes"> Верно
       </label>
       <label>
-        <input type="radio" name="q7" value="no"> Нет
+        <input type="radio" name="q4" value="no"> Не верно
       </label>
-      <p>8. HTML может использоваться для создания форм для ввода данных.</p>
+	   <h2>Правила нападения на ВЧ.</h2>
+      <p>1. От скольки человек разрешается нападать на военную часть? (5)</p>
       <label>
-        <input type="radio" name="q8" value="yes"> Да
-      </label>
-      <label>
-        <input type="radio" name="q8" value="no"> Нет
-      </label>
-      <p>9. HTML не может использоваться для вставки изображений на веб-страницу.</p>
-      <label>
-        <input type="radio" name="q9" value="no"> Нет
+        <input type="radio" name="q5" value="yes"> Верно
       </label>
       <label>
-        <input type="radio" name="q9" value="yes"> Да
+        <input type="radio" name="q5" value="no"> Не верно
       </label>
-      <p>10. HTML может использоваться для создания ссылок на другие веб-страницы.</p>
-<label>
-<input type="radio" name="q10" value="yes"> Да
-</label>
-<label>
-<input type="radio" name="q10" value="no"> Нет
-</label>
-<br>
-<button type="button" onclick="calculateResults()">Подсчитать результаты</button>
-</form>
-<p>Количество ответов "Да": <span id="result"></span></p>
-<script>
-function calculateResults() {
-let yesCount = 0;
-const questions = document.getElementsByTagName('input');
-for (let i = 0; i < questions.length; i++) {
-if (questions[i].checked && questions[i].value === 'yes') {
-yesCount++;
-}
-}
-document.getElementById('result').textContent = yesCount;
-}
-</script>
+      <p>2. Какие анимации запрещены? (Помогающие избежать смерть)</p>
+      <label>
+        <input type="radio" name="q6" value="yes"> Верно
+      </label>
+      <label>
+        <input type="radio" name="q6" value="no"> Не верно
+      </label>
+      <p>3. Разрешается ли Использовать аптечки/наркотики в бою? (Только в укрытии)</p>
+      <label>
+        <input type="radio" name="q7" value="yes"> Верно
+      </label>
+      <label>
+        <input type="radio" name="q7" value="no"> Не верно
+      </label>
+	  	   <h2>Правила нападения на инкассацию.</h2>
+      <p>1. С какого времени МОЖНО грабить инкассаторов? (00:00 - 06:00)</p>
+      <label>
+        <input type="radio" name="q8" value="yes"> Верно
+      </label>
+      <label>
+        <input type="radio" name="q8" value="no"> Не верно
+      </label>
+      <p>2. Минимальное количество грабителей? (4)</p>
+      <label>
+        <input type="radio" name="q9" value="no"> Не верно
+      </label>
+      <label>
+        <input type="radio" name="q9" value="yes"> Верно
+      </label>
+      <p>3. Когда можно чинить свой транспорт? (Если скрылась инкассация)</p>
+	<label>
+	<input type="radio" name="q10" value="yes"> Верно
+	</label>
+	<label>
+	<input type="radio" name="q10" value="no"> Не верно
+	</label>
+		   <h2>Правила бизвара.</h2>
+		    <p>1. Разрешён ли Хилл когда идёт бой? (Только в укрытиях)</p>
+      <label>
+        <input type="radio" name="q11" value="yes"> Верно
+      </label>
+      <label>
+        <input type="radio" name="q11" value="no"> Не верно
+      </label>
+	  		    <p>2. Разрешено ли каптить банкоматы/аренду велосипедов? (Нет)</p>
+      <label>
+        <input type="radio" name="q12" value="yes"> Верно
+      </label>
+      <label>
+        <input type="radio" name="q12" value="no"> Не верно
+      </label>
+	  		    <p>3. Разрешается ли провоцировать другое ОПГ даже в форме намёка? (Не верно)</p>
+      <label>
+        <input type="radio" name="q13" value="yes"> Верно
+      </label>
+      <label>
+        <input type="radio" name="q13" value="no"> Не верно
+      </label>
+	  	  	 <p>4. От скольки человек разрешен РК на бв? (3+)</p>
+      <label>
+        <input type="radio" name="q13" value="yes"> Верно
+      </label>
+      <label>
+        <input type="radio" name="q13" value="no"> Не верно
+      </label>
+	  		   <h2>Правила передачи бизнеса.</h2>
+		    <p>1. Назовите краткий процесс передачи бизнеса (Ответ оценивают гс / згс)</p>
+      <label>
+        <input type="radio" name="q14" value="yes"> Верно
+      </label>
+      <label>
+        <input type="radio" name="q14" value="no"> Не верно
+      </label>
+	<br>
+	<button type="button" onclick="calculateResults()" style="border-radius: 20px; background-color: black; color: white; padding: 10px 20px;">Подсчитать результаты</button>
+	</form>
+	<p>Количество ответов "Верно": <span id="result"></span></p>
+	<script>
+	function calculateResults() {
+	let yesCount = 0;
+	const questions = document.getElementsByTagName('input');
+	for (let i = 0; i < questions.length; i++) {
+	if (questions[i].checked && questions[i].value === 'yes') {
+	yesCount++;
+	}
+	}
+	document.getElementById('result').textContent = yesCount;
+	}
+	</script>
 
-  </body>
-</html>
+	  </body>
+<p style="font-weight:bold; color:white;">1. Ник    2. Кол-во правильных ответов</p>
+	  <table>
+  <tr>
+	<td><input type="text"></td>   <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+  <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+    <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+    <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+    <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+    <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+    <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+    <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+    <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+    <tr>
+    <td><input type="text"></td><td><input type="text"></td>
+  </tr>
+</table>
+</center>
+	</html>
